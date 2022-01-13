@@ -161,9 +161,9 @@ BIKE INTRO SECTION
   grid-template-columns: repeat(3, 1fr);
   width: 5.62rem;
   height: 8.18rem;
-  margin-left: 0.7rem;
   position: absolute;
   top: 3.5rem;
+  left: 2%;
   visibility: hidden;
 }
 .dot b {
@@ -193,7 +193,6 @@ BIKE INTRO SECTION
 .lady-lottie {
   width: 25.68rem;
   height: 25.68rem;
-  margin-left: 4.87rem;
   position: relative;
 }
 .lady-lottie-img {
@@ -287,7 +286,7 @@ BIKE INTRO SECTION
   width: 6.76rem;
   height: 2.47rem;
   position: absolute;
-  left: 230px;
+  left: 210px;
   bottom: 2px;
 }
 .third {
@@ -314,6 +313,7 @@ BIKE INTRO SECTION
     rgba(255, 189, 55, 0.58) 0%,
     #ffbd37 100%
   );
+  margin-left: 1.25rem;
 }
 .bike-sample-arrow button .fa-arrow-left {
   color: #daa53a;
@@ -384,10 +384,11 @@ HYBRID BIKES
 #hybrid-contianer {
   margin-left: 1rem;
   position: relative;
+  overflow: hidden;
 }
 #hybrid-contianer img {
   position: absolute;
-  right: 0;
+  right: -50px;
   z-index: -2;
 }
 /* Lottie rider */
@@ -422,10 +423,116 @@ HYBRID BIKES
   font-weight: bold;
 }
 
+/* 
+=============================
+WHAT OUR CUSTOMERS ARE SAYING
+=============================
+*/
+#parent {
+  width: fit-content;
+}
+#testimonial-container {
+  width: 100%;
+  background: #fcb72b;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+#testimonial-container h3 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  margin-top: 2rem;
+}
+/* dot design */
+.circle-dot {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 7.62rem;
+  height: 3.18rem;
+  margin-left: auto;
+  position: relative;
+  top: 20px;
+}
+.circle-dot b {
+  width: 10px;
+  height: 10px;
+  background: #ffffff5e;
+  display: inline-block;
+  border-radius: 50%;
+}
+.testimonial {
+  margin-top: 2.06rem;
+}
+#testimonial-container h3 {
+  margin-left: 3rem;
+}
+.testimonial-img-box {
+  width: 8.31rem;
+  height: 8.31rem;
+  border-radius: 50%;
+  background: #fff;
+  padding: 0.25rem;
+  margin: 0 auto;
+}
+.testimonial-img-box img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  display: block;
+}
+.item-1 {
+  width: 12.5rem;
+}
+.edward {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.37rem;
+  margin-top: 0.5rem;
+}
+.edward-desc {
+  color: #fff;
+  font-size: 1.125rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.testimony {
+  width: 26.25rem;
+  color: hsl(0, 0%, 90%);
+  font-size: 1.187rem;
+  line-height: 1.875rem;
+}
+/* Testimonial Footer */
+.testimonial-footer {
+  display: flex;
+  margin: 2.93rem auto 0 auto;
+  width: fit-content;
+  align-items: center;
+}
+.testimonial-footer b {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffbe3b;
+  margin-left: 1.125rem;
+}
+.testimonial-footer :nth-child(2) {
+  opacity: 30%;
+}
+.testimonial-footer :nth-child(3) {
+  opacity: 30%;
+}
+.testimonial-footer :nth-child(4) {
+  opacity: 30%;
+}
+.testimonial-footer button {
+  color: #ffbe3b;
+  margin-left: 5.75rem;
+  background: transparent;
+  font-size: 2rem;
+}
 @media screen and (min-width: 800px) {
-  body {
-    min-width: 1440px;
-  }
   h1 {
     font-size: 4rem;
   }
@@ -458,7 +565,7 @@ HYBRID BIKES
   .nav-center {
     display: flex;
     align-items: center;
-    margin-left: 16.62rem;
+    margin-left: 14.12rem;
   }
   .nav-header {
     padding: 0;
@@ -506,36 +613,43 @@ HYBRID BIKES
   .bike-update-wrapper {
     padding-top: 5.12rem;
     padding-left: 0;
-    margin-left: 16.62rem;
+    margin-left: 14.12rem;
     display: flex;
   }
   .bike-update-wrapper .tittle {
     margin-top: 4rem;
   }
-  /* Bicycle Samples */
-  .bike-sample {
-    margin-top: 0;
+  /* Lottie bike lady */
+  .lady-lottie {
+    margin-left: 4.61rem;
   }
+  /* Bicycle Samples */
   .bike-samples-wrapper {
     margin-top: 5.5rem;
   }
   .bike-samples-box {
-    margin-left: 16.62rem;
+    margin-left: 14.12rem;
     display: flex;
     justify-content: space-between;
   }
+  .bike-sample {
+    margin-right: 1.5rem;
+    margin-top: 0;
+  }
+
   /* Arrow left and right */
   .bike-sample-arrow {
     position: relative;
-    margin-left: 66rem;
+    margin-left: 61rem;
   }
   /* Other Type Of Bike */
   .other-bike-wrapper {
-    margin-left: 16.62rem;
+    margin-left: 14.12rem;
   }
   .other-bike-box {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
   }
 
   /* 
@@ -544,7 +658,7 @@ HYBRID BIKES
 ============
 */
   #hybrid-contianer {
-    margin-left: 16.62rem;
+    margin-left: 14.62rem;
     margin-top: 11.75rem;
   }
   .hybrid-wrapper {
@@ -552,5 +666,43 @@ HYBRID BIKES
   }
   .hybrid-text-box {
     margin-left: 3.925rem;
+  }
+
+  /* 
+=============================
+WHAT OUR CUSTOMERS ARE SAYING
+=============================
+*/
+  #parent {
+    margin-left: 14.12rem;
+  }
+  #testimonial-container {
+    width: 56.93rem;
+    height: 26.56rem;
+    margin-top: 12.673rem;
+  }
+  .testimonial {
+    margin-left: 8rem;
+    display: flex;
+    align-items: center;
+  }
+  #testimonial-container h3 {
+    margin-left: 10.37rem;
+  }
+  #testimonial-container h3::after {
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: 2px;
+    bottom: -10px;
+    transform: translateX(-585%);
+    background: #fff;
+  }
+  .testimony {
+    margin-left: 3.31rem;
+  }
+  /* Testimonial Footer */
+  .testimonial-footer {
+    margin-right: 15rem;
   }
 }
