@@ -13,6 +13,7 @@ Variables
 :root {
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
+  --radius: 6.25rem;
 }
 /*
 =============== 
@@ -39,6 +40,11 @@ ul {
 a {
   text-decoration: none;
 }
+button {
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
 h1,
 h2,
 h3,
@@ -47,6 +53,7 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  color: #233348;
 }
 h1 {
   font-size: 3rem;
@@ -62,6 +69,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
+  color: #7d7987;
 }
 
 /*
@@ -72,6 +80,7 @@ Navbar
 nav {
   padding-top: 1rem;
 }
+/* Nav header */
 .nav-header {
   display: flex;
   align-items: center;
@@ -90,25 +99,7 @@ nav {
   color: #ffbd37;
   transform: rotate(90deg);
 }
-
-.links a {
-  color: #7d7987;
-  font-size: 1.13rem;
-  text-transform: capitalize;
-  letter-spacing: var(--spacing);
-  display: block;
-  padding: 0.5rem 1rem;
-  transition: var(--transition);
-}
-.links a:hover {
-  color: #e5e5e5;
-  padding-left: 1.5rem;
-  background-color: #ffbd37;
-}
-#product {
-  color: #233348;
-  font-weight: bold;
-}
+/* Links */
 .links {
   height: 0;
   overflow: hidden;
@@ -137,6 +128,252 @@ nav {
   font-weight: bold;
   font-size: 1.5rem;
   margin-left: 12px;
+}
+.links a {
+  color: #7d7987;
+  font-size: 1.13rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+.links a:hover {
+  color: #e5e5e5;
+  padding-left: 1.5rem;
+  background-color: #ffbd37;
+}
+#product {
+  color: #233348;
+  font-weight: bold;
+}
+
+/* 
+==================
+BIKE INTRO SECTION
+==================
+*/
+#bike-intro {
+  position: relative;
+}
+.dot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 5.62rem;
+  height: 8.18rem;
+  margin-left: 0.7rem;
+  position: absolute;
+  top: 3.5rem;
+  visibility: hidden;
+}
+.dot b {
+  width: 11px;
+  height: 11px;
+  background: #ffe8b9;
+  border-radius: 50%;
+}
+
+/* Your Bike Eletric Update */
+.bike-update-wrapper {
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+.bike-updte-text .tittle {
+  width: 21.75rem;
+  font-size: 3rem;
+  line-height: 56px;
+}
+.bike-updte-text p {
+  font-size: 1.31rem;
+  font-weight: 300;
+  width: 26.12rem;
+  line-height: 32px;
+}
+/* Lottie bike lady */
+.lady-lottie {
+  width: 25.68rem;
+  height: 25.68rem;
+  margin-left: 4.87rem;
+  position: relative;
+}
+.lady-lottie-img {
+  height: 370px;
+  width: 370px;
+}
+/* Search box */
+.search-box {
+  width: 25.72rem;
+  height: 3.5rem;
+  border: 1px solid #c2cfe0;
+  border-radius: var(--radius);
+  margin-top: 2.06rem;
+  color: #c2cfe0;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.15rem;
+}
+.search-box span {
+  margin-left: 0.932rem;
+}
+.search-box button {
+  width: 6.81rem;
+  height: 2.5rem;
+  color: #000;
+  background: #ffbd37;
+  font-weight: 600;
+  margin-left: 6rem;
+}
+
+/* Bicycle Samples */
+.bike-samples-wrapper {
+  margin-top: 3rem;
+  position: relative;
+}
+#vector1 {
+  position: absolute;
+  z-index: -2;
+  top: 30px;
+}
+.bike-samples-box {
+  margin-left: 1rem;
+  position: relative;
+  z-index: 4;
+}
+.bike-sample {
+  background: #fff;
+  width: 23.83rem;
+  height: 23.65rem;
+  border-radius: 1.25rem;
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+  padding: 0.742rem 0.75rem;
+  margin-top: 2rem;
+}
+.bike-sample h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #233348;
+}
+.bike-sample img {
+  margin-left: 2.5rem;
+  width: 12.43rem;
+  height: 14.31rem;
+}
+.underline {
+  width: 20.85rem;
+  height: 1px;
+  background-color: #c2cfe0;
+}
+/* bike sample */
+.bike-sample-footer {
+  position: relative;
+}
+.bike-sample-footer p {
+  margin-top: 0.989rem;
+  margin-bottom: 0.742rem;
+  width: fit-content;
+}
+.bike-sample-footer span {
+  color: #233348;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.bike-sample-footer button {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 189, 55, 0.58) 0%,
+    #ffbd37 100%
+  );
+  width: 6.76rem;
+  height: 2.47rem;
+  position: absolute;
+  left: 230px;
+  bottom: 2px;
+}
+.third {
+  opacity: 0.8;
+}
+/* Arrow left and right */
+.bike-sample-arrow {
+  position: relative;
+  margin-top: 1.67rem;
+  width: fit-content;
+}
+.bike-sample-arrow button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: var(--radius);
+  font-size: 1.4rem;
+}
+.bike-sample-arrow :nth-child(1) {
+  background-color: #ffe8b9;
+}
+.bike-sample-arrow :nth-child(2) {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 189, 55, 0.58) 0%,
+    #ffbd37 100%
+  );
+}
+.bike-sample-arrow button .fa-arrow-left {
+  color: #daa53a;
+  width: 1.45rem;
+}
+.bike-sample-arrow button .fa-arrow-right {
+  width: 1.45rem;
+  background-color: transparent;
+}
+
+/* Other Type Of Bike */
+.other-bike-wrapper {
+  margin-top: 3.35rem;
+}
+.other-bike-wrapper h3 {
+  color: #233348;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  width: fit-content;
+}
+/* Other bike with border */
+.other-bike {
+  width: 14.18rem;
+}
+.other-bike-1 {
+  width: 14.18rem;
+  height: 7.31rem;
+  border: 2px solid #fcb72b;
+  border-radius: 10px;
+}
+.other-bike-1 img {
+  width: 10.37rem;
+  height: 6.25rem;
+  margin-left: 1.8rem;
+}
+.other-bike-desc {
+  color: #fcb72b;
+  font-weight: 600;
+  width: fit-content;
+  margin: 1rem auto;
+}
+/* Other bike without border */
+.other-bike-2 {
+  width: 14.18rem;
+  height: 7.31rem;
+  border-radius: 10px;
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+}
+.other-bike-2 img {
+  width: 8.93rem;
+  height: 5.37rem;
+  margin-left: 2.62rem;
+  margin-top: 1rem;
+}
+.differ-p {
+  color: #233348;
+}
+.fifth-bike {
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 800px) {
@@ -169,13 +406,13 @@ nav {
   Navbar
   ===============
  */
+  nav {
+    margin-top: 3rem;
+  }
   .nav-center {
-    max-width: 1170px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 2.5rem;
+    margin-left: 16.62rem;
   }
   .nav-header {
     padding: 0;
@@ -183,9 +420,12 @@ nav {
   .nav-toggle {
     display: none;
   }
+
+  /* Links */
   .links {
     height: auto;
     display: flex;
+    margin-left: 14.81rem;
   }
   .links a {
     padding: 0;
@@ -205,5 +445,50 @@ nav {
   }
   .social-icons a:hover {
     color: var(--clr-primary-7);
+  }
+
+  /* 
+  ==================
+  BIKE INTRO SECTION
+  ==================
+  */
+
+  /* Bike eletric update */
+  .dot {
+    visibility: visible;
+  }
+  .bike-update-wrapper {
+    padding-top: 5.12rem;
+    padding-left: 0;
+    margin-left: 16.62rem;
+    display: flex;
+  }
+  .bike-update-wrapper .tittle {
+    margin-top: 4rem;
+  }
+  /* Bicycle Samples */
+  .bike-sample {
+    margin-top: 0;
+  }
+  .bike-samples-wrapper {
+    margin-top: 5.5rem;
+  }
+  .bike-samples-box {
+    margin-left: 16.62rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Arrow left and right */
+  .bike-sample-arrow {
+    position: relative;
+    margin-left: 66rem;
+  }
+  /* Other Type Of Bike */
+  .other-bike-wrapper {
+    margin-left: 16.62rem;
+  }
+  .other-bike-box {
+    display: flex;
+    justify-content: space-between;
   }
 }

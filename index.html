@@ -15,68 +15,178 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-center">
-        <!-- nav header -->
-        <div class="nav-header">
-          <div class="logo-box">
-            <div class="logo"><b>B</b></div>
-            <span>eBike</span>
+    <header>
+      <nav>
+        <div class="nav-center">
+          <!-- Nav header -->
+          <div class="nav-header">
+            <div class="logo-box">
+              <div class="logo"><b>B</b></div>
+              <span>eBike</span>
+            </div>
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
           </div>
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
+          <!-- Links -->
+          <ul class="links">
+            <li>
+              <a href="#" id="product">Product</a>
+            </li>
+            <li>
+              <a href="#">Bike Type</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Testimonials</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
         </div>
-        <!-- links -->
-        <ul class="links">
-          <li>
-            <a href="#" id="product">Product</a>
-          </li>
-          <li>
-            <a href="#">Bike Type</a>
-          </li>
-          <li>
-            <a href="#">About us</a>
-          </li>
-          <li>
-            <a href="#">Testimonials</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <!-- social media
-        <ul class="social-icons">
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-behance"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com">
-              <i class="fab fa-sketch"></i>
-            </a>
-          </li>
-        </ul> -->
-      </div>
-    </nav>
+      </nav>
+    </header>
+    <main>
+      <!--||||| BIKE INTRO SECTION ||||| -->
+      <section id="bike-intro">
+        <!-- dot design-->
+        <div class="dot">
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+          <b></b>
+        </div>
+        <!-- Your Bike Eletric Update -->
+        <div class="bike-update-wrapper">
+          <div class="bike-updte-text">
+            <h1 class="tittle">your bike eletric update</h1>
+            <p>
+              Dummy text progressive, and affordable healthcare, accessible on
+              mobile and online for everyone
+            </p>
+            <div class="search-box">
+              <i class="fas fa-search"></i>
+              <span>Search Bike or anything</span>
+              <button>Find</button>
+            </div>
+          </div>
+          <!-- Lottie bike lady -->
+          <aside class="lady-lottie">
+            <lottie-player
+              src="https://assets6.lottiefiles.com/packages/lf20_f363x44a.json"
+              background="transparent"
+              speed="1"
+              class="lady-lottie-img"
+              loop
+              autoplay
+            ></lottie-player>
+          </aside>
+        </div>
+        <!-- Bicycle Samples -->
+        <div class="bike-samples-wrapper">
+          <img src="./image/vector1.svg" id="vector1" alt="vector" />
+          <div class="bike-samples-box">
+            <!-- first -->
+            <div class="bike-sample">
+              <h5>Universal eBike Kit</h5>
+              <img src="./image/bike1.svg" alt="bicycle" />
+              <div class="bike-sample-footer">
+                <div class="underline"></div>
+                <p>price</p>
+                <span>$750.00</span>
+                <button>Order</button>
+              </div>
+            </div>
+            <!-- second -->
+            <div class="bike-sample">
+              <h5>Brampotom eBike Kit</h5>
+              <img src="./image/bike2.svg" alt="bicycle" />
+              <div class="bike-sample-footer">
+                <div class="underline"></div>
+                <p>price</p>
+                <span>$750.00</span>
+                <button>Order</button>
+              </div>
+            </div>
+            <!-- third -->
+            <div class="bike-sample third">
+              <h5>Additional eBike Kit</h5>
+              <img src="./image/bike3.svg" alt="bicycle" />
+              <div class="bike-sample-footer">
+                <div class="underline"></div>
+                <p>price</p>
+                <span>$250.00</span>
+                <button>Order</button>
+              </div>
+            </div>
+          </div>
+          <!-- Arrow left and right -->
+          <div class="bike-sample-arrow">
+            <button><i class="fas fa-arrow-left"></i></button>
+            <button><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Other Type Of Bike -->
+        <div class="other-bike-wrapper">
+          <h3>Other Type Of Bike</h3>
+          <div class="other-bike-box">
+            <!-- Other bike with border -->
+            <!-- first -->
+            <div class="other-bike">
+              <div class="other-bike-1">
+                <img src="./image/otherBike1.svg" alt="bicycle" />
+              </div>
+              <p class="other-bike-desc">Hybrid Bikes</p>
+            </div>
+            <!-- Other bikes without border -->
+            <div class="other-bike">
+              <!-- second -->
+              <div class="other-bike-2">
+                <img src="./image/otherBike2.svg" alt="bicycle" />
+              </div>
+              <p class="other-bike-desc differ-p">Fixie Bikes</p>
+            </div>
+            <!-- third -->
+            <div class="other-bike">
+              <div class="other-bike-2">
+                <img src="./image/otherBike2.svg" alt="bicycle" />
+              </div>
+              <p class="other-bike-desc differ-p">Folding Bikes</p>
+            </div>
+            <!-- fourth -->
+            <div class="other-bike">
+              <div class="other-bike-2">
+                <img src="./image/otherBike2.svg" alt="bicycle" />
+              </div>
+              <p class="other-bike-desc differ-p">Mount Bikes</p>
+            </div>
+            <!-- fiveth -->
+            <div class="other-bike">
+              <div class="other-bike-2 fifth-bike">
+                <img src="./image/otherBike2.svg" alt="bicycle" />
+              </div>
+              <p class="other-bike-desc differ-p">City Bikes</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ||||| HYBRID BIKES ||||| -->
+    </main>
 
     <!-- javascript -->
     <script src="app.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
