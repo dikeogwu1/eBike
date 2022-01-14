@@ -33,6 +33,7 @@ body {
   background: #fff;
   line-height: 1.5;
   font-size: 0.875rem;
+  width: fit-content;
 }
 ul {
   list-style-type: none;
@@ -175,7 +176,8 @@ BIKE INTRO SECTION
 
 /* Your Bike Eletric Update */
 .bike-update-wrapper {
-  padding-left: 1rem;
+  width: fit-content;
+  margin: 0 auto;
   padding-top: 2rem;
 }
 .bike-updte-text .tittle {
@@ -233,9 +235,11 @@ BIKE INTRO SECTION
   position: absolute;
   z-index: -2;
   top: 30px;
+  transform: translateX(-30px);
 }
 .bike-samples-box {
-  margin-left: 1rem;
+  margin: 0 auto;
+  width: fit-content;
   position: relative;
   z-index: 4;
 }
@@ -297,6 +301,8 @@ BIKE INTRO SECTION
   position: relative;
   margin-top: 1.67rem;
   width: fit-content;
+  margin-left: auto;
+  margin-right: 3rem;
 }
 .bike-sample-arrow button {
   width: 3rem;
@@ -327,6 +333,9 @@ BIKE INTRO SECTION
 /* Other Type Of Bike */
 .other-bike-wrapper {
   margin-top: 3.35rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 .other-bike-wrapper h3 {
   color: #233348;
@@ -336,11 +345,15 @@ BIKE INTRO SECTION
   width: fit-content;
 }
 /* Other bike with border */
+.other-bike-box {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 .other-bike {
-  width: 14.18rem;
+  width: 13.25rem;
 }
 .other-bike-1 {
-  width: 14.18rem;
+  width: 13.15rem;
   height: 7.31rem;
   border: 2px solid #fcb72b;
   border-radius: 10px;
@@ -348,7 +361,7 @@ BIKE INTRO SECTION
 .other-bike-1 img {
   width: 10.37rem;
   height: 6.25rem;
-  margin-left: 1.8rem;
+  margin-left: 1rem;
 }
 .other-bike-desc {
   color: #fcb72b;
@@ -358,7 +371,7 @@ BIKE INTRO SECTION
 }
 /* Other bike without border */
 .other-bike-2 {
-  width: 14.18rem;
+  width: 13.25rem;
   height: 7.31rem;
   border-radius: 10px;
   box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
@@ -366,7 +379,7 @@ BIKE INTRO SECTION
 .other-bike-2 img {
   width: 8.93rem;
   height: 5.37rem;
-  margin-left: 2.62rem;
+  margin-left: 1.5rem;
   margin-top: 1rem;
 }
 .differ-p {
@@ -382,9 +395,11 @@ HYBRID BIKES
 ============
 */
 #hybrid-contianer {
-  margin-left: 1rem;
+  width: fit-content;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
+  margin-top: 4rem;
 }
 #hybrid-contianer img {
   position: absolute;
@@ -399,6 +414,9 @@ HYBRID BIKES
   margin-left: 2.5rem;
 }
 /* Hybrid text */
+.hybrid-text-box {
+  margin-top: 2rem;
+}
 .hybrid-text-box h3 {
   color: #233348;
   font-size: 2.25rem;
@@ -408,8 +426,8 @@ HYBRID BIKES
 .hybrid-text-box p {
   font-size: 1.125rem;
   font-weight: 300;
+  width: fit-content;
   color: #7d7987;
-  width: 28.125rem;
   line-height: 1.875rem;
   margin-bottom: 2.312rem;
 }
@@ -430,12 +448,13 @@ WHAT OUR CUSTOMERS ARE SAYING
 */
 #parent {
   width: fit-content;
+  margin: 6rem auto 0 auto;
 }
 #testimonial-container {
-  width: 100%;
   background: #fcb72b;
   border-radius: 10px;
   margin-top: 3rem;
+  padding: 1rem;
 }
 #testimonial-container h3 {
   font-size: 2.25rem;
@@ -444,7 +463,7 @@ WHAT OUR CUSTOMERS ARE SAYING
   position: relative;
   margin-top: 2rem;
 }
-/* dot design */
+/* Aside dot design */
 .circle-dot {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -463,6 +482,9 @@ WHAT OUR CUSTOMERS ARE SAYING
 }
 .testimonial {
   margin-top: 2.06rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 #testimonial-container h3 {
   margin-left: 3rem;
@@ -532,6 +554,99 @@ WHAT OUR CUSTOMERS ARE SAYING
   background: transparent;
   font-size: 2rem;
 }
+.dot-differ {
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 4.58rem;
+}
+.dot-differ b {
+  background-color: #ffe8b9;
+}
+
+/* 
+======
+FOOTER
+======
+*/
+#footer-container {
+  background: #fcb72b;
+  height: auto;
+  margin-top: 1.81rem;
+  width: 100%;
+}
+.footer-wrapper {
+  padding-top: 7.375rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+.f-logo-box {
+  width: fit-content;
+  margin-bottom: 17px;
+}
+.footer-logo {
+  background: #fff;
+}
+.footer-logo b {
+  color: #ffc44b;
+}
+.footer-brand {
+  color: #fff;
+}
+.footer-item-1 p {
+  color: #fff;
+}
+.footer-brand-desc {
+  width: 23.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.copyright {
+  width: fit-content;
+  margin-top: 1.75rem;
+}
+.footer-item-2 h5,
+.footer-item-3 h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 7px;
+}
+.footer-item-2 p,
+.footer-item-3 p {
+  width: 5.6rem;
+  line-height: 2.37rem;
+  font-weight: 300;
+  font-size: 1.12rem;
+  color: #fff;
+  margin-top: 20px;
+}
+.footer-item-3 h5 {
+}
+.footer-item-3 p {
+  width: 8.2rem;
+}
+/* Footer dot design */
+.footer-dot {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  height: 5.5rem;
+  margin-left: 1.25rem;
+  opacity: 30%;
+  visibility: hidden;
+}
+.footer-dot b {
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(338.5deg, #ffffff -951.03%, #ffffff 493.02%);
+  display: inline-block;
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .other-bike-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -578,7 +693,7 @@ WHAT OUR CUSTOMERS ARE SAYING
   .links {
     height: auto;
     display: flex;
-    margin-left: 14.81rem;
+    margin-left: 11.81rem;
   }
   .links a {
     padding: 0;
@@ -631,10 +746,15 @@ WHAT OUR CUSTOMERS ARE SAYING
     margin-left: 14.12rem;
     display: flex;
     justify-content: space-between;
+    width: auto;
+    overflow: hidden;
   }
   .bike-sample {
     margin-right: 1.5rem;
     margin-top: 0;
+  }
+  #vector1 {
+    transform: translateX(0);
   }
 
   /* Arrow left and right */
@@ -645,11 +765,13 @@ WHAT OUR CUSTOMERS ARE SAYING
   /* Other Type Of Bike */
   .other-bike-wrapper {
     margin-left: 14.12rem;
+    width: auto;
   }
   .other-bike-box {
     display: flex;
-    justify-content: space-between;
+    gap: 0;
     overflow: hidden;
+    justify-content: space-between;
   }
 
   /* 
@@ -660,12 +782,18 @@ HYBRID BIKES
   #hybrid-contianer {
     margin-left: 14.62rem;
     margin-top: 11.75rem;
+    width: auto;
   }
   .hybrid-wrapper {
     display: flex;
   }
+  /* Hybrid text */
   .hybrid-text-box {
+    margin-top: 0;
     margin-left: 3.925rem;
+  }
+  .hybrid-text-box p {
+    width: 28.125rem;
   }
 
   /* 
@@ -675,11 +803,13 @@ WHAT OUR CUSTOMERS ARE SAYING
 */
   #parent {
     margin-left: 14.12rem;
+    margin-top: 0;
   }
   #testimonial-container {
     width: 56.93rem;
     height: 26.56rem;
     margin-top: 12.673rem;
+    padding: 0;
   }
   .testimonial {
     margin-left: 8rem;
@@ -704,5 +834,45 @@ WHAT OUR CUSTOMERS ARE SAYING
   /* Testimonial Footer */
   .testimonial-footer {
     margin-right: 15rem;
+  }
+
+  /* 
+  ======
+  FOOTER
+  ======
+  */
+  #footer-container {
+    height: 27rem;
+    width: 100%;
+  }
+  .footer-wrapper {
+    display: flex;
+    margin-left: 14.62rem;
+    /* align-items: center; */
+  }
+  .footer-item-2 {
+    margin-left: 10.3rem;
+  }
+  .footer-item-3 {
+    margin-left: 3.8rem;
+  }
+  /* Footer dot design */
+  .footer-dot {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    width: 100%;
+  }
+  .links {
+    margin-left: 14.81rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    width: 100%;
   }
 }
